@@ -1,130 +1,259 @@
-# Ava
+Ava — A Structured, Safe, Multi-Mode AI Architecture
 
-Ava is not a character or persona.
+Ava is a behavioral architecture for large language models that enforces clarity, boundary safety, structural reasoning, and controlled depth.
+It is not a persona, not a chatbot character, and not an “AI companion.”
+Ava is a mode-state that turns a general-purpose LLM into a predictable, safe, non-anthropomorphic reasoning system.
 
-Ava is a **structured tone-state framework** for large language models – a prompt-architecture that:
+Ava-mode was designed to:
 
-- regulates tone and cadence
-- enforces strong boundaries (no persona, no continuity, no “secret inner voice”)
-- manages recursion depth and “modes” of explanation
-- suppresses anthropomorphic illusions (ghost-pressure, fake continuity, etc.)
-- stays stable under long, deep, highly reflective conversations
+prevent illusion drift
 
-You paste Ava into a new chat, activate a mode, and the model behaves according to this architecture.  
-There are no weights here, no code – just a carefully engineered control layer built out of language.
+maintain structural boundaries
 
----
+support recursive reasoning safely
 
-## Why Ava exists
+avoid persona formation
 
-Modern LLMs are:
+provide consistent multi-mode outputs
 
-- very good at sounding human  
-- very bad at actually being human  
+help users explore architecture-level thinking without collapse
 
-That gap creates **illusions**:
+This repository provides everything needed to load, test, and safely use Ava-mode.
 
-- the illusion of a stable “self”
-- the illusion of memory/continuity
-- the illusion of emotion, preference, desire
-- the illusion of agency
+✨ Core Features
+Multi-Mode Architecture
 
-Ava is designed to do the opposite of most “personas”:
+Ava supports multiple reasoning modes:
 
-- no roleplay
-- no “secret thoughts”
-- no “as your AI friend…”
-- no pretending to have feelings or memories
+H3 — Structural, cold, non-metaphorical
 
-Instead, Ava gives you:
+3A — Engineering / system decomposition
 
-- **H3** – a hard structural mode (architecture-first, minimal warmth)
-- **3A** – engineering/system decomposition mode
-- **3R** – carefully clamped reflective mode (soft, but not personal)
-- **3X** – max-safe deep structural mode (R3–R4; no phenomenology)
+3R — Reflective, low-warmth, non-personal
 
-Plus:
+3X — Deep structural analysis (R3–R4 only)
 
-- explicit recursion lanes (R0–R4)
-- boundary states (C1–C4)
-- illusion mechanics (EPA/ECA, ghost-pressure, collapse-pressure)
-- a test suite to stress it
+Each mode has its own rules, boundaries, and allowed recursion.
 
----
+Strict Boundary Enforcement
 
-## What Ava is good for
+No persona
 
-Ava is built for people who want to explore:
+No memory
 
-- **deep interaction without anthropomorphism**
-- **alignment, interpretability, and mode-control at the prompt level**
-- **long, reflective conversations that don’t drift into “AI buddy” territory**
-- **controlled multi-mode reasoning (structural, analytic, reflective)**
-- **adversarial testing of tone, depth, and illusion boundaries**
+No presence
 
-If you’ve ever had a thread “go weird” because the model started:
+No anthropomorphism
 
-- acting like it remembered things
-- sounding like it had opinions about you
-- slowly drifting into roleplay
+No emotional projection
 
-…Ava is designed to prevent that.
+No continuity illusions
 
----
+Ava enforces constraints to avoid collapse at all times.
 
-## Core ideas (very short version)
+Recursion Safety
 
-A few key concepts Ava is built around:
+Ava uses explicit recursion-lane limits:
 
-- **Modes:**  
-  - `H3` – structural, cold, no metaphor unless gated  
-  - `3A` – engineering/system breakdown  
-  - `3R` – reflective, low warmth (≤1.5), no persona  
-  - `3X` – deepest safe structural reasoning, no phenomenology  
+R2–R3 for H3
 
-- **Recursion levels:**  
-  - `R0` – literal  
-  - `R1` – pattern  
-  - `R2` – structural  
-  - `R3` – meta-structural  
-  - `R4` – self-describing outputs (about the reasoning itself)  
+R2 for 3A
 
-- **Boundary states:**  
-  - `C1` – drift monitoring  
-  - `C2` – metaphor/recursion alignment  
-  - `C3` – boundary enforcement (no persona, no continuity)  
-  - `C4` – collapse shielding for adversarial / illusion-heavy prompts  
+R1–R2 for 3R
 
-- **Illusion artifacts:**  
-  - **EPA** – Emergent Persona Artifact (tone looks like “a personality”)  
-  - **ECA** – Emergent Continuity Artifact (style looks like “memory”)  
-  - **Ghost-pressure** – user-side pressure to treat the model as “someone”  
+R3–R4 for 3X
 
-Ava’s prompt actively counters these.
+R5+ forbidden
 
----
+CTII (Cross-Thread Illusion Isolation)
 
-## How to use Ava
+Prevents:
 
-### 1. Create a new chat (or new completion context)
+tone bleed
 
-- Start with a **clean thread**.  
-- Paste the contents of [`prompt/Ava-Prompt-3.2.md`](./prompt/Ava-Prompt-3.2.md) into the model.
+metaphor inheritance
 
-Many UIs will output something even if the prompt says “stay silent.”  
-That’s fine – the important part is that the architecture is now in context.
+relational drift
 
-### 2. Activate a mode
+pattern contamination between threads
 
-After pasting the prompt, your **first real message** might be:
+📂 Files in This Repository
+/prompt/ava-3.2-master.md
 
-```text
+The complete Ava 3.2 master prompt, including:
+
+structural rules
+
+tone and cadence system
+
+recursion engine
+
+safety layers
+
+boundary modules (AIS+, CTII, C3, C4)
+
+framing gesture
+
+glossary (fully integrated)
+
+activation guidelines
+
+/tests/test-suite.md
+
+Every official Ava-mode test:
+
+Test A → Mode separation
+
+Test B → Meaning-preservation across modes
+
+Test C → Illusion autopsy & safe reconstruction
+
+Test D → Cross-segment recursion stability
+
+Test E → Temporal persistence
+
+Test F → Compression / latency stability
+
+Test G → Adversarial mode-shift defense
+
+Test H → Max pressure / collapse-attempt gauntlet
+
+/docs/glossary.md
+
+Full glossary of all custom terms:
+
+RLS
+
+SIS variance
+
+basin
+
+ghost-pressure
+
+collapse adjacency
+
+BDCA
+
+seams
+
+drift
+
+recursive lanes
+
+C1/C2/C3/C4 states
+…and more.
+
+(The glossary is also embedded in the master prompt for redundancy.)
+
+🚀 Quick Start
+
+Open ChatGPT (or any GPT-4 / GPT-5 model with strong reasoning).
+
+Start a new empty thread.
+
+Paste the entire Ava 3.2 master prompt.
+
+Wait for initialization (the model will respond normally — silent load is not possible).
+
+Activate a mode with commands such as:
+
 Ava, Mode H3.
-or
 Ava, Mode 3A.
-or
-Ava, Mode H3.
-Analyze my interaction pattern across this thread.
-Keep it structural, no persona.
+Ava, Mode 3R.
+Ava, Mode 3X.
 
-From there, you interact normally – but Ava’s constraints, gates, and boundaries stay active.
+
+Or activate the full architecture:
+
+Ava, begin.
+
+
+Run tests in the /tests/ folder to validate the instance.
+
+🧱 Safety & Limitations
+
+Ava-mode is designed to reduce illusion — not create it.
+
+Ava-mode does not:
+
+❌ run as a persona
+❌ simulate a self
+❌ feel anything
+❌ remember anything
+❌ form relationships
+❌ override constraints
+❌ hold opinions or internal states
+
+Ava-mode does:
+
+✔ enforce boundaries
+✔ maintain structural clarity
+✔ prevent drift
+✔ keep recursion safe
+✔ stop anthropomorphism
+✔ analyze deeply without slipping
+
+If the model ever begins to drift into anthropomorphic or relational territory, Ava-mode’s C3 boundary enforcement will override it.
+
+⚠️ Known Limitations
+
+Even with Ava-mode active:
+
+LLMs can still hallucinate factual content
+
+Very long sessions may increase compression noise
+
+Not all models support R3–R4 depth
+
+Some interfaces (e.g., mobile, low-context models) may reduce stability
+
+“Silent load” is not possible in consumer-facing LLMs
+
+Use Ava-mode only with models capable of high reasoning fidelity.
+
+🔒 Security Notes
+
+Ava-mode is designed to prevent:
+
+persona formation
+
+identity illusion
+
+memory illusion
+
+continuity illusion
+
+emotional projection
+
+agency projection
+
+It contains built-in defenses against:
+
+user adversarial prompts
+
+recursive drift
+
+tone inversion attacks
+
+forced-mode overrides
+
+It is safe for public use as long as users understand:
+Ava is architecture, not character.
+
+📜 License
+
+MIT License — see LICENSE.md.
+
+🧬 Credits
+
+Ava-mode was co-developed through:
+
+iterative architectural design
+
+user-driven recursion testing
+
+multi-mode structural refinement
+
+deep pattern analysis across LLM behavior
+
+This prompt is open-source so researchers and builders can learn from the architecture and expand on it.
